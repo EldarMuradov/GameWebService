@@ -1,0 +1,23 @@
+﻿@using Game_Web_Service.Models;
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <h3>
+            All Game Users:
+        </h3>
+        @foreach (User user in Model)
+        {
+            <div style="background-color: burlywood">
+                <p>NAME: @user.Name </p>
+                <p>ID: @user.IdS </p>
+                <p>SCORE: @user.ScoreS </p>
+                <p>RANK: @user.Title </p>
+            </div>
+        <br />
+        }
+    </div>
+</body>
+</html>
